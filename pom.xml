@@ -107,6 +107,20 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <includes>
+                        <include>org/jfree/chart/plot/CategoryPlot*</include>
+                        <include>org/jfree/chart/plot/CombinedDomainXYPlot*</include>
+                        <include>org/jfree/chart/plot/CombinedRangeXYPlot*</include>
+                        <include>org/jfree/chart/plot/FastScatterPlot*</include>
+                        <include>org/jfree/chart/plot/MeterPlot*</include>
+                        <include>org/jfree/chart/plot/PolarPlot*</include>
+                        <include>org/jfree/chart/plot/RingPlot*</include>
+                        <include>org/jfree/chart/plot/SpiderWebPlot*</include>
+                        <include>org/jfree/chart/plot/ThermometerPlot*</include>
+                        <include>org/jfree/chart/plot/XYPlot*</include>
+                    </includes>
+                </configuration>
             </plugin>  
 
            <plugin>
