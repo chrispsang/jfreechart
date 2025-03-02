@@ -1,0 +1,32 @@
+<FindBugsFilter>
+    <Match>
+        <Class name="org.jfree.chart.plot.CategoryPlot"/>
+    </Match>
+    <Match>
+        <Class name="org.jfree.chart.plot.XYPlot"/>
+    </Match>
+    <Match>
+        <Class name="org.jfree.chart.plot.ThermometerPlot"/>
+    </Match>
+    <Match>
+        <Class name="org.jfree.chart.plot.PolarPlot"/>
+    </Match>
+    <Match>
+        <Class name="org.jfree.chart.plot.RingPlot"/>
+    </Match>
+    <Match>
+        <Class name="org.jfree.chart.plot.CombinedRangeXYPlot"/>
+    </Match>
+    <Match>
+        <Class name="org.jfree.chart.plot.CombinedDomainXYPlot"/>
+    </Match>
+    <Match>
+        <Class name="org.jfree.chart.plot.FastScatterPlot"/>
+    </Match>
+    <Match>
+        <Class name="org.jfree.chart.plot.SpiderWebPlot"/>
+    </Match>
+    <Match>
+        <Class name="org.jfree.chart.plot.MeterPlot"/>
+    </Match>
+</FindBugsFilter>
