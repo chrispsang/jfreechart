@@ -124,16 +124,47 @@
             </plugin>  
 
            <plugin>
-            <groupId>org.pitest</groupId>
-            <artifactId>pitest-maven</artifactId>
-            <version>1.8.0</version>
-            <dependencies>
-                <dependency>
-                    <groupId>org.pitest</groupId>
-                    <artifactId>pitest-junit5-plugin</artifactId>
-                    <version>0.15</version>
-                </dependency>
-            </dependencies>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>1.18.2</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.pitest</groupId>
+                        <artifactId>pitest-junit5-plugin</artifactId>
+                        <version>1.2.2</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <!-- Target the production classes -->
+                    <targetClasses>
+                        <param>org.jfree.chart.plot.CategoryPlot</param>
+                        <param>org.jfree.chart.plot.CombinedDomainXYPlot</param>
+                        <param>org.jfree.chart.plot.CombinedRangeXYPlot</param>
+                        <param>org.jfree.chart.plot.FastScatterPlot</param>
+                        <param>org.jfree.chart.plot.MeterPlot</param>
+                        <param>org.jfree.chart.plot.PolarPlot</param>
+                        <param>org.jfree.chart.plot.RingPlot</param>
+                        <param>org.jfree.chart.plot.SpiderWebPlot</param>
+                        <param>org.jfree.chart.plot.ThermometerPlot</param>
+                        <param>org.jfree.chart.plot.XYPlot</param>
+                    </targetClasses>
+
+                    <!-- Target the corresponding test classes -->
+                    <targetTests>
+                        <param>org.jfree.chart.plot.CategoryPlotTest</param>
+                        <param>org.jfree.chart.plot.CombinedDomainXYPlotTest</param>
+                        <param>org.jfree.chart.plot.CombinedRangeXYPlotTest</param>
+                        <param>org.jfree.chart.plot.FastScatterPlotTest</param>
+                        <param>org.jfree.chart.plot.MeterPlotTest</param>
+                        <param>org.jfree.chart.plot.PolarPlotTest</param>
+                        <param>org.jfree.chart.plot.RingPlotTest</param>
+                        <param>org.jfree.chart.plot.SpiderWebPlotTest</param>
+                        <param>org.jfree.chart.plot.ThermometerPlotTest</param>
+                        <param>org.jfree.chart.plot.XYPlotTest</param>
+                    </targetTests>
+
+                    <!-- Explicitly instruct PIT to use JUnit 5 -->
+                </configuration>
             </plugin>
             
             <plugin>
